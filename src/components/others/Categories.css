@@ -1,59 +1,59 @@
-/* Categories.css */
-
 .categories {
-    padding: 20px;
-    background-color: white;
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    font-size: 18px; /* Set a base font size */
-  }
-  
-  .categories ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .categories li {
-    padding: 8px 15px; /* Add some padding for spacing */
-    color: #555;
-    cursor: pointer;
-    transition: color 0.3s;
-    position: relative;
-  }
-  
-  .categories li:hover {
-    color: #007bff;
-  }
-  
-  .dropdown-toggle {
-    position: relative;
-  }
-  
-  .dropdown-menu {
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px 0;
-    margin-top: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  
-  .dropdown-menu li {
-    padding: 8px 20px;
-    white-space: nowrap;
-  }
-  
-  .dropdown-menu li:hover {
-    background-color: #f0f0f0;
-  }
-  
+  padding: 20px;
+  background-color: white;
+  margin: 20px 0;
+  font-size: 18px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to new line */
+  align-items: center;
+}
+
+.categories li {
+  padding: 8px 15px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: relative;
+  flex: 1 1 180px; /* Adjust width of each category item */
+  max-width: 100%; /* Ensure items take full width on smaller screens */
+}
+
+.categories li:hover {
+  color: #007bff;
+}
+
+.dropdown-toggle {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: ${isDropdownVisible ? 'block' : 'none'}; /* Ensure dropdown is visible when toggled */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 0;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%; /* Full width dropdown */
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+  white-space: nowrap;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}

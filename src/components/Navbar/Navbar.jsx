@@ -8,7 +8,7 @@ export default function Navbar() {
   const { currentUser, logout } = useAuth();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
@@ -20,8 +20,8 @@ export default function Navbar() {
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -33,10 +33,10 @@ export default function Navbar() {
           className="collapse navbar-collapse justify-content-between align-items-center"
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav">
+          <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">
-               Home
+                Home
               </Link>
             </li>
             <li className="nav-item">
@@ -45,37 +45,26 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <form className="flex-row align-items-center">
+          <form className="flex-row align-items-center"> {/* Added align-items-center to center vertically */}
             <input
               className="form-control me-3 mt-4"
               type="search"
               placeholder="Search on Zood"
               aria-label="Search"
-              style={{ minWidth: "400px" }} // Adjust the width here
             />
-            <button
-              className="btn btn-success"
-              type="submit"
-              style={{ minWidth: "100px" }}
-            >
+            <button className="btn btn-success" type="submit">
               Search
             </button>
           </form>
-          <ul className="navbar-nav ms-5 ml-10">
-            {currentUser ? (
-              <li className="nav-item">
-                <button className="btn btn-outline-dark" onClick={logout}>
-                  Log Out
-                </button>
-              </li>
-            ) : (
-              <li className="nav-item">
-                <Link className="btn btn-primary" to="/signup">
-                  Sign Up
-                </Link>
-              </li>
-            )}
-          </ul>
+          {currentUser ? (
+            <button className="btn btn-outline-dark ms-3" onClick={logout}>
+              Log Out
+            </button>
+          ) : (
+            <Link className="btn btn-primary ms-3" to="/signup">
+              Sign Up
+            </Link>
+          )}
         </div>
       </div>
     </nav>

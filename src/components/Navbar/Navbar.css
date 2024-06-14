@@ -1,6 +1,6 @@
 .navbar {
-  padding: 10px 20px;
-  background-color:  rgb(101, 148, 147); /* Darker background color */
+  padding: 10px 10px;
+  background-color: #b5c0cb; /* Light gray background color */
 }
 
 .navbar-brand img {
@@ -13,7 +13,7 @@
 
 .navbar-nav .nav-link {
   margin-left: 15px; /* Adjusted margin between navigation links */
-  color: #fff; /* White text color */
+  color: #343a40; /* Dark text color */
 }
 
 .btn {
@@ -22,13 +22,13 @@
 }
 
 .btn-outline-light {
-  color: #fff;
-  border-color: #fff;
+  color: #343a40; /* Dark text color */
+  border-color: #343a40; /* Dark border color */
 }
 
 .btn-outline-light:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+  background-color: #e9ecef; /* Light gray background on hover */
+  border-color: #e9ecef;
 }
 
 .btn-outline-dark {
@@ -37,18 +37,31 @@
 }
 
 .btn-outline-dark:hover {
-  background-color: #343a40;
+  background-color: #343a40; /* Dark background on hover */
   border-color: #343a40;
 }
 
 .form-control {
-  border: none;
+  border: 1px solid #ced4da; /* Light border color */
   border-radius: 4px;
   background-color: #fff; /* White background color */
-  color: #333; /* Text color */
+  color: #343a40; /* Dark text color */
   box-shadow: none; /* Remove box shadow */
 }
 
 .form-control:focus {
   border-color: #0056b3; /* Focus color */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 10px; /* Adjust spacing between items */
+  }
+
+  .form-control {
+    width: 100%; /* Full width for search input */
+    max-width: 100%;
+    margin-top: 10px; /* Adjust spacing */
+  }
 }
