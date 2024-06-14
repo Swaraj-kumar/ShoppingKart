@@ -20,7 +20,7 @@
   .hero-content {
     z-index: 1;
     position: absolute;
-    top: 40%; /* Position at 50% from top */
+    top: 50%; /* Position at 50% from top */
     transform: translateY(50%); /* Adjust to move content down */
     width: 100%; /* Full width */
   }
