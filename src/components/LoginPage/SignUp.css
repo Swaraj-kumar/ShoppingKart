@@ -1,0 +1,97 @@
+/* src/components/SignUp.css */
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.signup-box {
+  width: 90%; /* Adjusted width to take up 90% of the viewport */
+  max-width: 600px; /* Increased max-width for a larger sign-up box */
+  padding: 40px; /* Increased padding for better spacing */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align content */
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 80px; /* Adjust the size of your logo as needed */
+}
+
+.signup-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 20px; /* Increased margin bottom for input fields */
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+button {
+  display: flex;
+  align-items: center; /* Align logo and text vertically */
+  justify-content: center; /* Center align text */
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.button-logo {
+  max-width: 20px; /* Adjust logo size in button */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.redirect-text {
+  text-align: center;
+  margin-top: 20px; /* Increased margin top for better spacing */
+}
+
+.redirect-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.redirect-text a:hover {
+  text-decoration: underline;
+}

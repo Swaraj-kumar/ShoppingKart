@@ -1,0 +1,54 @@
+.navbar {
+  padding: 10px 20px;
+  background-color:  rgb(101, 148, 147); /* Darker background color */
+}
+
+.navbar-brand img {
+  height: 30px; /* Adjusted height of the logo */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px; /* Adjusted margin between navigation links */
+  color: #fff; /* White text color */
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-outline-dark {
+  color: #343a40; /* Dark text color */
+  border-color: #343a40; /* Dark border color */
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.form-control {
+  border: none;
+  border-radius: 4px;
+  background-color: #fff; /* White background color */
+  color: #333; /* Text color */
+  box-shadow: none; /* Remove box shadow */
+}
+
+.form-control:focus {
+  border-color: #0056b3; /* Focus color */
+}

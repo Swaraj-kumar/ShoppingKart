@@ -1,0 +1,52 @@
+.hero-section {
+    margin-top: 50px;
+    position: relative;
+    width: calc(100% - 40px); /* Adjust margins from both sides */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px; /* Adjust height as needed */
+    background-image: url('https://imaginestore.org/wp-content/uploads/2018/07/0010_Hero_v098.jpg'); /* Replace with your actual background image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+  
+  .hero-content {
+    z-index: 1;
+    position: absolute;
+    top: 40%; /* Position at 50% from top */
+    transform: translateY(50%); /* Adjust to move content down */
+    width: 100%; /* Full width */
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .shop-now-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now-btn:hover {
+    background-color: #0056b3;
+  }
+  
