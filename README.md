@@ -1,7 +1,8 @@
-Shopping App README
-Welcome to the Shopping App repository! This app allows users to explore and purchase various products conveniently.
+Shopping App
 
-Features
+-Welcome to the Shopping App repository! This app allows users to explore and purchase various products conveniently.
+
+-Features
 Product Categories: Browse products conveniently categorized for easy navigation.
 
 User Authentication: Sign up and sign in functionality to manage user accounts securely using Firebase.
@@ -12,7 +13,7 @@ Admin Panel: Manage products, add new items, and update existing product details
 
 Responsive Design: Ensures a seamless experience across devices of all sizes.
 
-Technologies Used
+-Technologies Used
 Frontend: React, React Router, Bootstrap
 
 Backend: Node.js, Express, MongoDB
