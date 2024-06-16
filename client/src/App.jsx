@@ -1,6 +1,3 @@
-// App.js
-
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
@@ -13,11 +10,11 @@ import Slider from "./components/others/Slider";
 import Footer from "./components/Footer/Footer";
 import Growth from "./components/others/Growth";
 import HeroSection from "./components/ItemSection/Itemshow";
-import ShowPage from "./components/Products/ShowPage"; // Import ShowPage component
-import CartPage from "./components/CartPage/CartPage"; // Import CartPage component
-import { CartProvider } from "./contexts/CartContext"; // Adjust the import path based on your folder structure
-import AddProduct from "./components/Products/AddProduct"; // Import AddProduct component
-import PromotedAds from "./components/Ads/PromotedAds"; // Import PromotedAds component
+import ShowPage from "./components/Products/ShowPage";
+import CartPage from "./components/CartPage/CartPage"; 
+import { CartProvider } from "./contexts/CartContext";
+import AddProduct from "./components/Products/AddProduct"; 
+import PromotedAds from "./components/Ads/PromotedAds"; 
 
 function App() {
   return (

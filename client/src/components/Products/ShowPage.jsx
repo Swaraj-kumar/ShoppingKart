@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from './Product'; // Ensure the correct path to the Product component
 import { getProducts } from '../../services/productService'; // Ensure the correct path to productService
-import './ShowPage.css'; // CSS file for styling (optional)
+import './ShowPage.css'; // CSS file for styling
 
 const ShowPage = () => {
   const [products, setProducts] = useState([]);
@@ -33,7 +33,9 @@ const ShowPage = () => {
 
   return (
     <div className="shop-now-page">
+      <h2>Phones & Accessories</h2>
       <div className="product-grid">
+        
         {products.map((product) => (
           <Product
             key={product._id}

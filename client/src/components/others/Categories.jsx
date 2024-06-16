@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Categories.css';
+import { Link } from 'react-router-dom';
 
 export default function Categories() {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -15,7 +16,7 @@ export default function Categories() {
           All Categories
           {isDropdownVisible && (
             <ul className="dropdown-menu">
-              <li>Phones & Accessories</li>
+              <li> <Link to="/shopNow">Phones & Accessories</Link></li>
               <li>Computer & Office</li>
               <li>Consumer Electronics</li>
               <li>Men’s Clothing</li>
@@ -30,7 +31,8 @@ export default function Categories() {
             </ul>
           )}
         </li>
-        <li>Phones & Accessories</li>
+
+        <li> <Link to="/shopNow"> Phones & Accessories </Link></li>
         <li>Computer & Office</li>
         <li>Consumer Electronics</li>
         <li>Men’s Clothing</li>

@@ -1,7 +1,6 @@
-/* src/components/Products/ShowPage.css */
 .shop-now-page {
   padding: 20px;
-  background-color: #f7f7f7; /* Light grey background */
+  background-color: #e1e7ea; /* Light grey background */
 }
 
 .product-grid {
@@ -10,4 +9,11 @@
   gap: 20px;
   max-width: 1200px; /* Adjusted max width */
   margin: 0 auto;
+  text-align: center; /* Center the text in the grid */
+}
+
+h2 {
+  width: 100%;
+  text-align: center; /* Center the h2 text */
+  margin-bottom: 50px; /* Optional: Add some space below the h2 */
 }
