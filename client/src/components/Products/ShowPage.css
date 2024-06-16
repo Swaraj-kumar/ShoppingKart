@@ -1,0 +1,13 @@
+/* src/components/Products/ShowPage.css */
+.shop-now-page {
+  padding: 20px;
+  background-color: #f7f7f7; /* Light grey background */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted min width for better responsiveness */
+  gap: 20px;
+  max-width: 1200px; /* Adjusted max width */
+  margin: 0 auto;
+}

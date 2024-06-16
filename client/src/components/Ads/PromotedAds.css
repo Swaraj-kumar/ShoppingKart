@@ -1,0 +1,165 @@
+/* components/PromotedAds.css */
+
+.promoted-ads {
+    padding: 20px;
+}
+
+.ads-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ads-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ad-card {
+    max-width: 400px; /* Adjust as needed */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ad-card .h-48 {
+    height: 200px; /* Adjust the height of the image section */
+    background-size: cover;
+}
+
+.ad-card .bg-cover {
+    background-size: cover;
+}
+
+.ad-card .text-center {
+    text-align: center;
+}
+
+.ad-card .border-r, .ad-card .border-b, .ad-card .border-l {
+    border-color: #ccc;
+}
+
+.ad-card .bg-white {
+    background-color: #fff;
+}
+
+.ad-card .rounded-t {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.ad-card .rounded-b {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.ad-card .lg\:rounded-t-none {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.ad-card .lg\:rounded-l {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.ad-card .p-4 {
+    padding: 16px;
+}
+
+.ad-card .flex {
+    display: flex;
+}
+
+.ad-card .flex-col {
+    flex-direction: column;
+}
+
+.ad-card .justify-between {
+    justify-content: space-between;
+}
+
+.ad-card .leading-normal {
+    line-height: 1.5;
+}
+
+.ad-card .mb-8 {
+    margin-bottom: 32px;
+}
+
+.ad-card .text-sm {
+    font-size: 12px;
+}
+
+.ad-card .text-gray-600 {
+    color: #666;
+}
+
+.ad-card .flex.items-center {
+    align-items: center;
+}
+
+.ad-card .fill-current {
+    fill: currentColor;
+}
+
+.ad-card .w-3, .ad-card .h-3 {
+    width: 12px;
+    height: 12px;
+}
+
+.ad-card .mr-2 {
+    margin-right: 8px;
+}
+
+.ad-card .text-gray-900 {
+    color: #333;
+}
+
+.ad-card .font-bold {
+    font-weight: 700;
+}
+
+.ad-card .text-xl {
+    font-size: 24px;
+}
+
+.ad-card .mb-2 {
+    margin-bottom: 8px;
+}
+
+.ad-card .text-gray-700 {
+    color: #555;
+}
+
+.ad-card .text-base {
+    font-size: 14px;
+}
+
+.ad-card .text-gray-900.leading-none {
+    line-height: 1;
+}
+
+.ad-card .w-10, .ad-card .h-10 {
+    width: 40px;
+    height: 40px;
+}
+
+.ad-card .rounded-full {
+    border-radius: 50%;
+}
+
+.ad-card .mr-4 {
+    margin-right: 16px;
+}
+
+.ad-card .text-sm {
+    font-size: 12px;
+}
+
+.ad-card .text-gray-600 {
+    color: #666;
+}
